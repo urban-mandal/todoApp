@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3142;
+}
+
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid black; */
+  border-radius: 40px;
+  width: 35%;
+  height: 20%;
+  margin-bottom: 60px;
+}
+
+.h1Login {
+  color: #fdfffc;
+  margin: 0;
+  font-size: 46px;
+  margin-bottom: 10px;
+  /* width: 100%; */
+}
+
+#Login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 388px;
+}
+
+#Login input:focus {
+  outline: none;
+}
+
+.label {
+  font-size: large;
+  color: #ebf5ee;
+}
+
+#email {
+  margin-bottom: 5px;
+}
+
+#buttonLogin {
+  color: black;
+  font-weight: bold;
+  margin-top: 5px;
+  width: 40%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ebf5ee;
+  border: none;
+  /* border-radius: 50px; */
+}
+
+#buttonLogin:hover {
+  background-color: #a5babe;
+}
+
+#buttonLogin:active {
+  box-shadow: 2px 2px #e5e5e5;
+}
+
+#singUp {
+  color: #ffffff;
+}
+
+#singUp:hover {
+  color: #bfc0c0;
+}
+
+.error {
+  color: red;
+}
+
+@media only screen and (max-width: 1114px) {
+  .loginDiv {
+    width: 100%;
+  }
+  .h1Login {
+    font-size: 80px;
+  }
+}

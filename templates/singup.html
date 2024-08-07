@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Urban Mandal" />
+    <meta created="7.8.2024" />
+    <link rel="stylesheet" href="../static/login.css" />
+    <title>todoAPP</title>
+  </head>
+  <body>
+    <div class="loginDiv">
+      <h1 class="h1Login">Login</h1>
+      <form action="/singup" method="post" id="Login">
+        <label for="username" class="label">username</label>
+        <input type="text" name="username" id="username" />
+        <label for="email" class="label">email</label>
+        <input type="text" name="email" id="email" />
+        <label for="password" class="label">password</label>
+        <input type="password" name="password" id="password" />
+        <button type="submit" id="buttonLogin">sing up</button>
+      </form>
+      <a href="/login" id="singUp">login</a>
+    </div>
+    <div class="error">{{error}}</div>
+  </body>
+</html>
