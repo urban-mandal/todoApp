@@ -11,6 +11,8 @@ app.secret_key = secret.SECRET_KEY
 @app.route("/")
 def index():
     dbi.db_initilize()
+    if 'username' in session:
+        return redirect(url_for("homepage"))
     return render_template("login.html")
 
 
@@ -49,3 +51,9 @@ def homepage():
         return render_template("home.html")
     else:
         return redirect(url_for('login'))
+
+
+@app.route("/logout")
+def logout():
+    session.pop('username', None)
+    return redirect(url_for("index"))
