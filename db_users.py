@@ -40,6 +40,14 @@ def get_hashed_password(email):
         return None
 
 
+def get_username(email):
+    conn = sq.connect(db_path())
+    cur = conn.cursor()
+    res = cur.execute("SELECT username FROM users WHERE email = (?)", (email,))
+    username = res.fetchall()[0][0]
+    return username
+
+
 # too much work so I wont make this work yet!
 def delete_user(username):
     pass

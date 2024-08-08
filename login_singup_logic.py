@@ -33,3 +33,8 @@ def sing_up(username, email, password):
         return True
     else:
         return False
+
+
+def get_username(email):
+    username = dbu.get_username(email)
+    return username

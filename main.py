@@ -1,7 +1,11 @@
-from flask import Flask, url_for, redirect, request, render_template
+from flask import Flask, url_for, redirect, request, render_template, session
 import login_singup_logic as lsl
 import db_initialize as dbi
+import secret
+
 app = Flask(__name__)
+
+app.secret_key = secret.SECRET_KEY
 
 
 @app.route("/")
@@ -16,6 +20,7 @@ def login():
         email = request.form.get("email")
         password = request.form.get("password")
         if lsl.main_login(email, password):
+            session['username'] = lsl.get_username(email)
             return redirect(url_for("homepage"))
         else:
             return render_template("login.html")
@@ -40,4 +45,7 @@ def singup():
 
 @app.route("/homepage")
 def homepage():
-    return render_template("home.html")
+    if 'username' in session:
+        return render_template("home.html")
+    else:
+        return redirect(url_for('login'))
