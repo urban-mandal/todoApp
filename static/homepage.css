@@ -28,11 +28,12 @@ body {
 }
 
 #profilePic {
-  color: black;
-  background-color: #343a40;
+  color: white;
+  background-color: #212529;
   height: 24px;
   width: 24px;
-  border-radius: 1px solid black;
+  border: 1px solid black;
+  border-radius: 90px;
   margin-right: 5px;
 }
 
