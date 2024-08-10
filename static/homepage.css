@@ -30,11 +30,12 @@ body {
 #profilePic {
   color: white;
   background-color: #212529;
-  height: 24px;
-  width: 24px;
+  height: 36px;
+  width: 36px;
   border: 1px solid black;
   border-radius: 90px;
   margin-right: 5px;
+  font-size: 20px;
 }
 
 .threeLines {
