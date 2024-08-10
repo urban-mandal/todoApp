@@ -24,6 +24,7 @@ body {
 
 #username {
   color: white;
+  margin-right: 5px;
 }
 
 #profilePic {
@@ -32,6 +33,7 @@ body {
   height: 24px;
   width: 24px;
   border-radius: 1px solid black;
+  margin-right: 5px;
 }
 
 .threeLines {
