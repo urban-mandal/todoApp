@@ -28,6 +28,9 @@ body {
 }
 
 #profilePic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: #212529;
   height: 36px;
