@@ -20,7 +20,10 @@
           <path d="M0 30 H100 30" stroke="#FFFFFF" stroke-width="2px" />
         </svg>
       </button>
-      <div id="profile">{{ username }}</div>
+      <div id="profile">
+        <span id="username"> {{ username }} </span>
+        <div id="progilePic">{{first_two_chars}}</div>
+      </div>
     </div>
     <a href="/logout">logout</a>
     <script src="../static/homepage.js"></script>
