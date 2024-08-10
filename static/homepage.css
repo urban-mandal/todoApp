@@ -1,0 +1,28 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212529;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.toolbar {
+  display: flex;
+  position: fixed;
+  background-color: #343a40;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.threeLines {
+  height: 40px;
+  width: 25px;
+}
+
+#sidebar {
+  border: none;
+  background-color: transparent;
+  transition: transform 0.5s;
+}

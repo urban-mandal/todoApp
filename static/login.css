@@ -5,7 +5,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #2d3142;
+  background-color: #212529;
 }
 
 .loginDiv {
@@ -17,7 +17,7 @@ body {
   border-radius: 40px;
   width: 35%;
   height: 20%;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .h1Login {

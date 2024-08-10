@@ -48,7 +48,7 @@ def singup():
 @app.route("/homepage")
 def homepage():
     if 'username' in session:
-        return render_template("home.html")
+        return render_template("home.html", username=session['username'])
     else:
         return redirect(url_for('login'))
 
