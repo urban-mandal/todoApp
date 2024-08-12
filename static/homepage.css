@@ -1,6 +1,6 @@
 body {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-color: #212529;
   margin: 0;
   margin-top: 50px;
@@ -42,22 +42,92 @@ body {
   font-size: 20px;
 }
 
-.threeLines {
+/* .threeLines {
   height: 40px;
   width: 25px;
-}
+} */
 
 #sidebar {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 32px;
   border: none;
   background-color: transparent;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
+  border: 0.0652rem solid #30363d;
+  border-radius: 10px;
+  margin-left: 5px;
 }
 
 #sideBarDiv {
   position: fixed;
   display: none;
-  top: 50px;
+  top: 0;
   height: 100vh;
-  width: 100px;
-  background-color: #6c757d;
+  width: 20%;
+  background-color: #212529;
+  border: 1px solid #30363d;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.closeButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+#closeDiv {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  height: 32px;
+  width: 32px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#closeDiv:hover {
+  background-color: #495057;
+}
+
+#templates {
+  margin-left: 4px;
+  font-size: 16px;
+  color: white;
+}
+
+#tasks {
+  width: 100%;
+  height: 100%;
+}
+
+#profileTools {
+  display: none;
+  position: fixed;
+  right: 0;
+  flex-direction: column;
+  height: 100px;
+  width: 200px;
+  /* border: 0.5px solid white; */
+  border-radius: 5px;
+  background-color: 212529;
+  border: 1px solid #30363d;
+  padding: 5px;
+}
+
+#profileA {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 20px;
+  vertical-align: middle;
+  padding: 2px;
+  border-radius: 5px;
+}
+#profileA:hover {
+  background-color: #495057;
 }
