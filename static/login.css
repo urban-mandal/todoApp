@@ -90,3 +90,9 @@ body {
     font-size: 80px;
   }
 }
+
+@media only screen and (max-width: 388px) {
+  #Login {
+    width: 90%;
+  }
+}
