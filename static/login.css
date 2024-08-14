@@ -6,6 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #212529;
+  margin: 0;
 }
 
 .loginDiv {
