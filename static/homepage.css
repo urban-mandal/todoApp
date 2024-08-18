@@ -114,7 +114,7 @@ body {
   width: 200px;
   /* border: 0.5px solid white; */
   border-radius: 5px;
-  background-color: 212529;
+  background-color: #212529;
   border: 1px solid #30363d;
   padding: 5px;
 }
@@ -130,4 +130,139 @@ body {
 }
 #profileA:hover {
   background-color: #495057;
+}
+
+.taskContainer {
+  display: grid;
+  height: 100%;
+  width: calc(100% - 162px);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  grid-column-gap: 5px;
+  justify-content: center;
+  margin-left: 81px;
+  margin-right: 81px;
+}
+
+.taskDivs {
+  min-height: 100%;
+  max-height: 100%;
+  overflow: scroll;
+}
+
+.day {
+  text-align: center;
+  border: 1px solid #30363d;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.task {
+  width: calc(100% - 4px);
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #30363d;
+  margin-bottom: 10px;
+}
+
+.taskToolBar {
+  display: flex;
+  background-color: #495057;
+  justify-content: space-between;
+}
+
+.deadline {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.toolButton {
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.tools {
+  display: none;
+  position: fixed;
+}
+
+.taskText {
+  display: flex;
+  justify-content: space-between;
+  max-height: calc(200px - 70.5px);
+  min-height: calc(200px - 70.5px);
+}
+
+.text {
+  color: whitesmoke;
+  max-width: 300px;
+  min-width: 300px;
+  max-height: calc(200px - 70.5px);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.complete {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 49px;
+}
+
+.completeButton {
+  color: #6096ba;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.backArrow {
+  display: flex;
+  position: fixed;
+  top: 50px;
+  height: 81px;
+  width: 81px;
+}
+
+.forwardArrow {
+  display: flex;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  height: 81px;
+  width: 81px;
+}
+
+.newDay {
+  border: none;
+  background-color: transparent;
+}
+
+/* new task section */
+.addTask {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 62px;
+  height: 62px;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  background-color: #30363d;
+}
+
+.buttonAdd {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
 }
