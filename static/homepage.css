@@ -58,7 +58,9 @@ body {
   border: 0.0652rem solid #30363d;
   border-radius: 10px;
   margin-left: 5px;
+  transition: all 1s ease-in-out;
 }
+
 
 #sideBarDiv {
   position: fixed;
